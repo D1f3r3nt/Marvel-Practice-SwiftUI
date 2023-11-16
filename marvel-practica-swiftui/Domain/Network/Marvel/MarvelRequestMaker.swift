@@ -32,7 +32,6 @@ struct MarvelRequestMaker {
         urlCad += "apikey=\(apiKey)"
         urlCad += "&ts=\(ts)"
         urlCad += "&hash=\(hashKey)"
-        urlCad += "&orderBy=\(orderBy)"
         
         var request: URLRequest = URLRequest(url: URL(string: urlCad)!)
         

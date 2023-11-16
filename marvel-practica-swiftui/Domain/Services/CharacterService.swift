@@ -7,6 +7,11 @@
 import Foundation
 import Combine
 
+protocol CharacterServiceProtocol: AnyObject {
+    func getCharacters() -> AnyPublisher<CharactersResponse, Error>
+    func getComics(by id: String) -> AnyPublisher<ComicResponse, Error>
+}
+
 final class CharacterService: CharacterServiceProtocol {
     
     let networker: NetworkerProtocol
@@ -35,3 +40,4 @@ final class CharacterService: CharacterServiceProtocol {
         )
     }
 }
+
