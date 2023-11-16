@@ -12,6 +12,7 @@ final class RootViewModel: ObservableObject {
     @Published var characters: Characters = []
     @Published var status = Status.none
     
+    var testing: Bool
     var suscriptors = Set<AnyCancellable>()
     var service: CharacterServiceProtocol
     
@@ -20,6 +21,7 @@ final class RootViewModel: ObservableObject {
         service: CharacterServiceProtocol = CharacterService()
     ) {
         self.service = service
+        self.testing = testing
         
         if (testing) {
             getCharactersTesting()
@@ -41,21 +43,19 @@ final class RootViewModel: ObservableObject {
                     self.status = .none
                 }
             } receiveValue: { data in
-                print(data)
                 self.characters = data.data.results
             }
             .store(in: &suscriptors)
 
     }
     
-    // for Testing and UI Development
     func getCharactersTesting() {
         self.status = .loading
         self.characters = getCharactersFake()
         self.status = .none
     }
     
-    func getCharactersFake() -> Characters {
+    private func getCharactersFake() -> Characters {
         
         let character = Character(
             id: 1011334,

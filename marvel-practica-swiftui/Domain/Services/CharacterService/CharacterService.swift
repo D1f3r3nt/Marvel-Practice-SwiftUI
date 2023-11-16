@@ -27,4 +27,11 @@ final class CharacterService: CharacterServiceProtocol {
         )
         
     }
+    
+    func getComics(by id: String) -> AnyPublisher<ComicResponse, Error> {
+        return networker.callServer(
+            type: ComicResponse.self,
+            request: requestMaker.getComics(by: id)
+        )
+    }
 }

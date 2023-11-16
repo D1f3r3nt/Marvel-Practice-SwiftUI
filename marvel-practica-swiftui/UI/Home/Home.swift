@@ -15,7 +15,7 @@ struct Home: View {
             ScrollView {
                 ForEach(viewModel.characters) { character in
                     NavigationLink {
-                        
+                        Detail(viewModel: DetailViewModel(id: character.id))
                     } label: {
                         HomeRow(character: character)
                     }

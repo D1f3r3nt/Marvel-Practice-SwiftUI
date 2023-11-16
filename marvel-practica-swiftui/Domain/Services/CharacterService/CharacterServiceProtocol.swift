@@ -10,4 +10,5 @@ import Combine
 
 protocol CharacterServiceProtocol: AnyObject {
     func getCharacters() -> AnyPublisher<CharactersResponse, Error>
+    func getComics(by id: String) -> AnyPublisher<ComicResponse, Error>
 }

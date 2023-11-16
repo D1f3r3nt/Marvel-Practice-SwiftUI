@@ -10,6 +10,10 @@
 		1D0C0FE32B057E1700882F2D /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0C0FE22B057E1700882F2D /* ErrorView.swift */; };
 		1D0C0FE52B057E1C00882F2D /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0C0FE42B057E1C00882F2D /* RootView.swift */; };
 		1D0C0FE72B057E2200882F2D /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0C0FE62B057E2200882F2D /* RootViewModel.swift */; };
+		1D0C0FEB2B05819700882F2D /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0C0FEA2B05819700882F2D /* Detail.swift */; };
+		1D0C0FED2B05861D00882F2D /* Comics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0C0FEC2B05861D00882F2D /* Comics.swift */; };
+		1D0C0FEF2B058DE700882F2D /* DetailRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0C0FEE2B058DE700882F2D /* DetailRow.swift */; };
+		1D0C0FF12B05980D00882F2D /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0C0FF02B05980D00882F2D /* DetailViewModel.swift */; };
 		1DA6AF442B0401BA005653D2 /* marvel_practica_swiftuiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA6AF432B0401BA005653D2 /* marvel_practica_swiftuiApp.swift */; };
 		1DA6AF462B0401BA005653D2 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA6AF452B0401BA005653D2 /* Home.swift */; };
 		1DA6AF482B0401BD005653D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DA6AF472B0401BD005653D2 /* Assets.xcassets */; };
@@ -50,6 +54,10 @@
 		1D0C0FE22B057E1700882F2D /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		1D0C0FE42B057E1C00882F2D /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		1D0C0FE62B057E2200882F2D /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		1D0C0FEA2B05819700882F2D /* Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
+		1D0C0FEC2B05861D00882F2D /* Comics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comics.swift; sourceTree = "<group>"; };
+		1D0C0FEE2B058DE700882F2D /* DetailRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRow.swift; sourceTree = "<group>"; };
+		1D0C0FF02B05980D00882F2D /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		1DA6AF402B0401BA005653D2 /* marvel-practica-swiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "marvel-practica-swiftui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DA6AF432B0401BA005653D2 /* marvel_practica_swiftuiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = marvel_practica_swiftuiApp.swift; sourceTree = "<group>"; };
 		1DA6AF452B0401BA005653D2 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
@@ -106,6 +114,16 @@
 				1D0C0FE62B057E2200882F2D /* RootViewModel.swift */,
 			);
 			path = RootView;
+			sourceTree = "<group>";
+		};
+		1D0C0FE92B05818400882F2D /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				1D0C0FEA2B05819700882F2D /* Detail.swift */,
+				1D0C0FEE2B058DE700882F2D /* DetailRow.swift */,
+				1D0C0FF02B05980D00882F2D /* DetailViewModel.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 		1DA6AF372B0401BA005653D2 = {
@@ -215,6 +233,7 @@
 		1DA6AF752B0406C5005653D2 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				1D0C0FE92B05818400882F2D /* Detail */,
 				1DA6AF452B0401BA005653D2 /* Home.swift */,
 				1DA6AF8F2B042735005653D2 /* HomeRow.swift */,
 			);
@@ -226,6 +245,7 @@
 			children = (
 				1DA6AF7B2B040ED0005653D2 /* Character.swift */,
 				1DA6AF7D2B040F86005653D2 /* Status.swift */,
+				1D0C0FEC2B05861D00882F2D /* Comics.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -409,11 +429,15 @@
 				1DA6AF812B0410B2005653D2 /* Networker.swift in Sources */,
 				1DA6AF462B0401BA005653D2 /* Home.swift in Sources */,
 				1DA6AF842B04110A005653D2 /* MarvelRequestMaker.swift in Sources */,
+				1D0C0FEF2B058DE700882F2D /* DetailRow.swift in Sources */,
 				1DBAF1622B056EE800B2AA76 /* Loading.swift in Sources */,
+				1D0C0FF12B05980D00882F2D /* DetailViewModel.swift in Sources */,
 				1DA6AF8E2B0417A4005653D2 /* CharacterServiceMock.swift in Sources */,
+				1D0C0FED2B05861D00882F2D /* Comics.swift in Sources */,
 				1DA6AF7C2B040ED0005653D2 /* Character.swift in Sources */,
 				1DA6AF8C2B0416BC005653D2 /* CharacterService.swift in Sources */,
 				1DA6AF862B041154005653D2 /* HTTPMethods.swift in Sources */,
+				1D0C0FEB2B05819700882F2D /* Detail.swift in Sources */,
 				1D0C0FE32B057E1700882F2D /* ErrorView.swift in Sources */,
 				1DA6AF442B0401BA005653D2 /* marvel_practica_swiftuiApp.swift in Sources */,
 				1DA6AF7E2B040F86005653D2 /* Status.swift in Sources */,
