@@ -20,6 +20,7 @@ struct Detail: View {
                 }
             }
         }
+        .id(0)
     }
 }
 

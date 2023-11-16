@@ -23,6 +23,7 @@ struct HomeRow: View {
                     .cornerRadius(20)
                     .frame(width: 100, height: 100)
             }
+            .id(0)
             
             Image(decorative: "")
                 .resizable()
@@ -30,17 +31,20 @@ struct HomeRow: View {
                     LinearGradient(colors: [.white, .black], startPoint: .bottomTrailing, endPoint: .topLeading)
                 )
                 .opacity(0.4)
+                .id(1)
             
             HStack {
                 Text("\(character.name)")
                     .font(.title)
                     .fontWeight(.bold)
                     .foregroundColor(.white)
+                    .id(2)
                 
                 Spacer()
                 
                 Image(systemName: "chevron.right")
                     .foregroundColor(.white)
+                    .id(3)
             }
             .padding()
             

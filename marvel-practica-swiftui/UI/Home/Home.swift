@@ -22,6 +22,7 @@ struct Home: View {
                 }
             }
             .navigationTitle("Marvel Heroes")
+            .id(0)
         }
     }
 }

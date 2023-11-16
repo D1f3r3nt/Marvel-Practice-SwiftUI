@@ -23,11 +23,13 @@ struct DetailRow: View {
                     .cornerRadius(20)
                     .frame(width: 100, height: 100)
             }
+            .id(0)
             
             Image(decorative: "")
                 .resizable()
                 .background(.black)
                 .opacity(0.4)
+                .id(1)
             
             VStack(alignment: .leading) {
                 Text(comic.title)
@@ -35,10 +37,12 @@ struct DetailRow: View {
                     .foregroundColor(.white)
                     .fontWeight(.bold)
                     .padding([.bottom], 20)
+                    .id(2)
                 
                 Text(comic.description ?? "")
                     .font(.body)
                     .foregroundColor(.white)
+                    .id(3)
                 
                 Spacer()
             }

@@ -16,16 +16,19 @@ struct ErrorView: View {
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
+                .id(0)
             
             VStack {
                 Image(systemName: "exclamationmark.triangle.fill")
                     .font(.largeTitle)
                     .foregroundColor(.orange)
                     .padding()
+                    .id(1)
                 
                 Text(errorText)
                     .font(.title)
                     .foregroundColor(.white)
+                    .id(2)
             }
         }
     }
