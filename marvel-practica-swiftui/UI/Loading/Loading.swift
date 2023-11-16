@@ -14,10 +14,12 @@ struct Loading: View {
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
+                .id(0)
             
             ProgressView()
                 .scaleEffect(3)
                 .progressViewStyle(CircularProgressViewStyle(tint: Color.orange))
+                .id(1)
         }
     }
 }

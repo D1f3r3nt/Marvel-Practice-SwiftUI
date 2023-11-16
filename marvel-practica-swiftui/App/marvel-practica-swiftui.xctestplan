@@ -1,0 +1,37 @@
+{
+  "configurations" : [
+    {
+      "id" : "A2C026CF-0A4F-4039-98C9-C58228CA3C5D",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:marvel-practica-swiftui.xcodeproj",
+      "identifier" : "1DA6AF3F2B0401BA005653D2",
+      "name" : "marvel-practica-swiftui"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:marvel-practica-swiftui.xcodeproj",
+        "identifier" : "1DA6AF502B0401BD005653D2",
+        "name" : "marvel-practica-swiftuiTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:marvel-practica-swiftui.xcodeproj",
+        "identifier" : "1DA6AF5A2B0401BE005653D2",
+        "name" : "marvel-practica-swiftuiUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
