@@ -1,19 +1,9 @@
-# marvel-practica-swiftui
+# Marvel Practice SwiftUI
 
-En esta practica se han obtenido todos los requisitos obligatorios:
-* Arquitectura MVVM
-* SwiftUI
-* Combine
-* Listado de heroes con Detail
-* 50 % de coverage, se ha obtenido un 80% de coverage
-* Se ha usado el diseño hecho en el modulo UI/UX
+In this iOS application we used Swift UI technology and MVVM architecture,
+Combine has also been used to process the API calls, finally to validate the correct operation, tests have been performed and a coverage of 80% has been obtained.
+tests have been performed and a coverage of 80% has been obtained.
 
-En cuanto a los requisitos opcionales:
-* Se ha hecho una pantalla de carga
-* No se ha hecho uso de Async/Await, ya que se ha preferido usar combine
-* No se ha hecho multiplataforma
-
-## Ayuda
-
-En caso de que la aplicación no cargue los datos, sera por los KEYs de Marvel, si te diriges al archivo MarvelRequestMaker, 
-veras dos constantes de apiKey y privateKey, cambiandolas por unas KEYs validas ya funcionara
+The design of this application comes from a previous design in Figma, this application has a Log In, 
+where in case of success the information is saved in Keychain, then consists of a list where the Marvel heroes are shown.
+Marvel heroes, this information is extracted from an API, if you click on a hero you will navigate to the details screen.
